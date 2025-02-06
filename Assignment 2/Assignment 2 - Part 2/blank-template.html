@@ -18,6 +18,11 @@
     <!-- insertion of table layout -->
     <table>
       <caption>Data about the planets of out solar system (Planetary facts taken from <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
+      <colgroup>
+        <col span="2">
+        <col style="border: 2px solid black">
+        <col span="9">
+      </colgroup>
       <tr>
         <td colspan="2"></td>
         <th>Name</th>
@@ -82,7 +87,7 @@
       </tr>
       <tr>
         <th rowspan ="4" scope="rowgroup">Jovian Planets</th>
-        <th rowspan="=2" scope="rowgroup">Gas Giants</th>
+        <th rowspan="2" scope="rowgroup">Gas Giants</th>
         <th scope="row">Jupiter</th>
         <td>1,898</td>
         <td>142,984</td>
@@ -132,7 +137,8 @@
         <td></td>
       </tr>
       <tr>
-        <th>Pluto</th>
+        <th colspan="2" scope="colgroup">Dwarf Planets</th>
+        <th scope="row">Pluto</th>
         <td>0.0146</td>
         <td>2,370</td>
         <td>2,095</td>
@@ -142,11 +148,6 @@
         <td>-225</td>
         <td>5</td>
         <td>Declassified as a planet in 2006, but this remains controversial.</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
       </tr>
     </table>
 
