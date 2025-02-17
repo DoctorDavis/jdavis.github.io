@@ -30,6 +30,8 @@ body {
 
   ul {
     background-color: #eeeeee;
+    border: solid 5px purple;
+    padding: 1em;
   }
   
   
