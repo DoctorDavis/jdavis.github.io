@@ -10,6 +10,7 @@ html {
     padding: 8px 12px;
     background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
   }
+
   .large-box {
     width: 200px;
     height: 100px; 
@@ -17,11 +18,18 @@ html {
     text-align:center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 17px;
+    font-size: 1.125rem;
     padding: 5%;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    background-color: yellow;
+    
+  }
+    .text-style {
+      color: darkblue;
+      text-shadow: 2px 2px 4px black;
+    
 
   }
 
