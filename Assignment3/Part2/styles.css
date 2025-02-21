@@ -14,7 +14,8 @@ html {
   .large-box {
     width: 200px;
     height: 100px; 
-    border: 1px solid black;
+    border: 2px solid #b3a000;
+    border-radius: 8px;
     text-align:center;
     margin-left: auto;
     margin-right: auto;
@@ -24,12 +25,12 @@ html {
     align-items: center;
     justify-content: center;
     background-color: yellow;
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3), inset 2px 2px 5px rgba(255, 255, 255, 0.5), inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+    }
     
-  }
     .text-style {
       color: darkblue;
       text-shadow: 2px 2px 4px black;
-    
-
-  }
+    }
 
