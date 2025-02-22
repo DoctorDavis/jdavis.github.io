@@ -154,14 +154,14 @@ ul li::before {
 /* Navigation Menu */
 
 nav {
-  background-color: rgb(177, 107, 107); /* Background color */
-  color: white; /* Text color */
-  padding: 10px; /* Padding inside nav */
-  text-align: center; /* Centering text */
+  background-color: rgb(177, 107, 107);
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
 
 nav ul {
-  list-style: none; /* Remove default bullets */
+  list-style: none;
   padding: 0;
   margin: 0;
   color: white;
@@ -175,14 +175,14 @@ nav ul li {
 nav ul li a {
   font-family: 'Roboto Slab', serif;
   font-size: 14px;
-  color: white; /* Link color */
-  text-decoration: none; /* Remove underline */
+  color: white;
+  text-decoration: none;
   padding: 10px;
   display: inline-block;
 }
 
 nav ul li a:hover {
-  background-color: #944; /* Darker red for hover effect */
+  background-color: #944; 
   border-radius: 5px;
 
 }
