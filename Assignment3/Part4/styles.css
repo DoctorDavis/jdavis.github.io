@@ -55,3 +55,10 @@ body {
       width: 200px;
   }
 
+  /* Float left around the picture */
+  article img {
+    float: left; 
+    /* put a margin around the picture */ 
+    margin-right: 20px;  
+    margin-bottom: 20px;  
+}
