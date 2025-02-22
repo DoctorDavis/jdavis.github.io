@@ -99,18 +99,24 @@ h1 {
       color: rgb(171, 98, 98); 
       text-decoration: underline; 
   }
+
+  a:link {
+      color: rgb(145, 50, 50);
+  }
   
   a:visited {
       color: rgb(145, 50, 50); 
   }
   
-  a:hover, a:focus {
-      color: rgb(141, 97, 97); 
-      text-decoration: none; 
-  }
+  a:hover {
+    color: rgb(141, 97, 97); 
+    text-decoration: none; 
+} 
 
   a:focus {
     outline: none;
+    color: rgb(141, 97, 97); 
+      text-decoration: none; 
   }
 
   a:active {
@@ -118,10 +124,30 @@ h1 {
     background-color: #a66;
 }
 
-/* we could use link symbol 🔗, the ↗ symbol, the ⧉ symbol, or the 🌍symbol, i like the globe best*/
-a[href^="http"]:not([href*="yourwebsite.com"])::before {
-  content: "🌍" ;
+a[href^="http"]::before {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.25em;
+
+  background-size: 100%;
+  background-image: url("external-link-52.png");
 }
 
+/* List Section */
 
-    
+/* Bullets */
+/* to hide old bullets and padding from the HTML code*/
+ul {
+  list-style-type: none;
+  padding-left: 2em; 
+}
+/* Put in the new Bullets*/
+ul li::before {
+  content: "\25AA"; 
+  color: #a66; 
+  font-size: 1.2em;
+  margin-right: 1em;
+}
+
