@@ -51,7 +51,7 @@
 
   @font-face {
     font-family: 'Merriweather';
-    src: url('fonts\Merriweather\Merriweather-Regular.ttf') format('woff2'),
+    src: url('fonts/Merriweather/Merriweather-Regular.ttf') format('woff2'),
          url('fonts/Merriweather-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -71,13 +71,24 @@ body {
     font-family: 'Merriweather', serif;
     font-size: 10px;
     line-height: .5cm;
+    letter-spacing: .25px;
+    word-spacing: .25px;
 }
 
 h1 {
   font-size: 32px;
   text-align: center;
 }
-h2, h3, h4, h5, h6 {
+
+    h2 + p, 
+    h3 + p, 
+    h4 + p, 
+    h5 + p, 
+    h6 + p  {
+    text-indent: 20px;
+      }
+    p {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-}
+    font-size: 12px;
+    letter-spacing: .25px;
+    }
