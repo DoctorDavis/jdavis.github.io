@@ -21,6 +21,7 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
+    display: flex;
   }
 
   nav {
@@ -28,7 +29,6 @@ body {
         padding: .5em;
         position: sticky;
         top: 0;
-        z-index: 10;
     }
   
   nav ul {
@@ -49,16 +49,22 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
   }
 
   .feature {
       width: 200px;
+      float: left;
+      margin-right: 1em;
   }
 
-  /* Float left around the picture */
-  article img {
-    float: left; 
-    /* put a margin around the picture */ 
-    margin-right: 20px;  
-    margin-bottom: 20px;  
+.photos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    gap: 1px;
 }
