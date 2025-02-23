@@ -153,37 +153,33 @@ ul li::before {
 
 /* Navigation Menu */
 
-nav {
-  background-color: rgb(177, 107, 107);
+nav ul {
+  list-style-type: none;
+  background-color: #a66;
   color: white;
   padding: 10px;
   text-align: center;
+  display: block;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.navbar a{
   color: white;
+  padding: 0px;
+  display: block;
+  text-align: center;
 }
 
-nav ul li {
-  margin: 0 20px;
+nav ul li a:link {
+  background-color: #a66;
   color: white;
-}
+  text-decoration-line: none;
 
-nav ul li a {
-  font-family: 'Roboto Slab', serif;
-  font-size: 14px;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  display: inline-block;
 }
 
 nav ul li a:hover {
-  background-color: #944; 
+  background-color: #a66; 
   border-radius: 5px;
-
+  color: white;
 }
+
 
