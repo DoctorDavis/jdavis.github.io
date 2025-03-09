@@ -14,7 +14,9 @@ function randomValueFromArray(array){
     return array[random];
 }
 // create storyText and 3 Arrays
-const storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
+const storyText = "It was 94 fahrenheit outside, so :insertX: went for a walk. When they got to :inserty:, 
+                    they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but 
+                    was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
 
 const insertX = ["Willy the Goblin", "Big Daddy", "Father Christmas"];
 
@@ -32,8 +34,14 @@ function result() {
     const yItem = randomValueFromArray(insertY);
     const zItem = randomValueFromArray(insertZ);
 
+    newStory = newStory
+                .replaceAll(":insertX:", xItem)
+                .replace(":insertY:", yItem)
+                .replace(":insertZ:", zItem);
+
     if(customName.value !== '') {
         const name = customName.value;
+        newStory = newStory.replace("Bob", name)
   }
 
     if(document.getElementById("uk").checked) {
